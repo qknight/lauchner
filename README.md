@@ -1,12 +1,15 @@
  launcher
 =============================
- launcher is a ncurses based simple c/c++ tool to launch and control a list of programs
+launcher is a ncurses based simple c/c++ tool to launch and control a list of programs
 
- the concept is to be able to control dependencies between programs when developing several programs.
+the concept is to be able to control dependencies between programs when developing several programs.
+
+![screenshot of the program in action](screenshot.png)
+
 
 target audience 
 ============================
- the launcher tool was used during development and is designed for developers
+the launcher tool was used during development and is designed for developers
 
 * not all syscalls have error handlers
 * sometimes program starts might get your console into a state which is not even cured by typing 'reset'
