@@ -4,7 +4,7 @@ launcher is a ncurses based simple c/c++ tool to launch and control a list of pr
 
 the concept is to be able to control dependencies between programs when developing several programs.
 
-![screenshot of the program in action](screenshot.png)
+![screenshot of the program in action](https://github.com/qknight/lauchner/blob/master/screenshot.png)
 
 
 target audience 
