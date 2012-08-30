@@ -47,10 +47,15 @@ void Launcher::run_mainloop() {
     myMenuItems.push_back(new MenuEntry("--",""));
 
     //WARNING:
+    // - arguments are currently not implemented still they can be assigned below
     // - check that the working directory is correct and exists
     // - create nice comments for the commands
     // - commands which require a shell don't work. example: env, export,
     // - some programs have problem with stdin (fd 0) like tail; i wasn't able to make them work!
+    // - if using relative paths for the binary NOTE that it MUST be relative to the given 'working directory' not the 
+    //   path where you are starting ./Launcher from! 
+    // - if a binary can't be found but is started from Launcher using execl (or whatever is implemented) it might
+    //   eat 100% cpu; this is a bug and i didn't fix it yet
 
     myMenuItems.push_back(new Task("kate", "a nice text editor", "/usr/bin/kate", "", "/tmp", "logs/kate"));
     myMenuItems.push_back(new Task("kcalc", "a kdelibs based calculator", "/usr/bin/kcalc", "", "/tmp", "logs/kcalc"));
